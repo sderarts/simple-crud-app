@@ -28,6 +28,6 @@ mongoose.connect(`${db_url}`)
   .then(() => {
     console.log('Connected to the database!')
     })
-  .catch(()=>{
-    console.log("Connection failed!");
+  .catch((error)=>{
+    console.log("Connection failed!", error);
   });
